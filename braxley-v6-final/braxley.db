@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Admin",
+      "last_name": "Braxley",
+      "middle_name": "",
+      "email": "admin@braxley.edu",
+      "password_hash": "$2a$10$UJF56SCxnDIuClp5a.YwD.iTmidiJsuym./Vm4/f7DC14fugsZfvC",
+      "date_of_birth": "1990-01-01",
+      "country": "Kazakhstan",
+      "role": "admin",
+      "created_at": "2026-02-27T15:32:40.000Z"
+    },
+    {
+      "id": 2,
+      "first_name": "islam",
+      "last_name": "aushev",
+      "middle_name": "",
+      "email": "aushevislam469@gmail.com",
+      "password_hash": "$2a$10$9KG4snVST.o31yU2F.sV2ennkEWlvDEHReyUv/oX.CAWFTCviyva.",
+      "date_of_birth": "2000-02-03",
+      "country": "Kazakhstan",
+      "role": "student",
+      "created_at": "2026-02-27T15:34:12.134Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "program": "Foundation Certificate",
+      "duration": "2 months",
+      "status": "accepted",
+      "admin_notes": "ПОЧЕМУ BRAXLEY: 000000000000000000000000\n\nОПЫТ: 000000000000000000000000\n\nЦЕЛИ: 000000000000000000000000\n\nНАВЫКИ: 000000000000000000000000",
+      "submitted_at": "2026-02-27T15:34:35.978Z",
+      "reviewed_at": "2026-02-27T15:36:10.834Z",
+      "created_at": "2026-02-27T15:34:35.941Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "application_id": 1,
+      "user_id": 2,
+      "amount": "3000",
+      "currency": "KZT",
+      "method": "Kaspi Pay",
+      "transaction_ref": "KASPI-1772206475949",
+      "status": "confirmed",
+      "created_at": "2026-02-27T15:34:35.978Z",
+      "confirmed_at": "2026-02-27T15:34:35.978Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "type": "welcome",
+      "title": "Добро пожаловать в Braxley Institute!",
+      "message": "Аккаунт создан. Подайте заявку чтобы начать.",
+      "read": false,
+      "created_at": "2026-02-27T15:34:12.134Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "type": "payment",
+      "title": "✅ Платёж подтверждён",
+      "message": "3000 KZT через Kaspi Pay. Заявка принята на рассмотрение.",
+      "read": false,
+      "created_at": "2026-02-27T15:34:35.978Z"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "type": "decision",
+      "title": "🎓 Вы приняты!",
+      "message": "Поздравляем! Приёмная комиссия Braxley Institute рада сообщить о вашем зачислении.",
+      "read": false,
+      "created_at": "2026-02-27T15:36:10.834Z"
+    }
+  ],
+  "audit": [
+    {
+      "id": 1,
+      "admin_id": 1,
+      "action": "status_change",
+      "target_type": "application",
+      "target_id": 1,
+      "details": "{\"old\":\"review\",\"new\":\"accepted\"}",
+      "ip": "::1",
+      "created_at": "2026-02-27T15:36:10.834Z"
+    },
+    {
+      "id": 2,
+      "admin_id": 1,
+      "action": "db_backup",
+      "target_type": "system",
+      "target_id": 0,
+      "details": "{}",
+      "ip": "::1",
+      "created_at": "2026-02-27T15:36:36.796Z"
+    }
+  ],
+  "_seq": {
+    "u": 2,
+    "a": 1,
+    "p": 1,
+    "n": 3,
+    "l": 2
+  }
+}
